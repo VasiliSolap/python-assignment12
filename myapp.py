@@ -7,7 +7,7 @@ countries = df["country"].drop_duplicates()
 
 
 app = Dash(__name__) 
-
+server = app.server
 
 app.layout = html.Div([ 
     dcc.Dropdown(
